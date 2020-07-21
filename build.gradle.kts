@@ -1,7 +1,6 @@
 plugins {
     kotlin("jvm") version "1.3.72"
-    `java-library`
-    `maven-publish`
+    maven
 }
 
 group = "pw.dotdash"
@@ -16,10 +15,6 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
     api("net.kyori:adventure-api:4.0.0-SNAPSHOT")
-}
-
-configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
 tasks {
